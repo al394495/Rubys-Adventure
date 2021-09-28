@@ -7,8 +7,7 @@ public class RubyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //QualitySettings.vSyncCount = 0;
-        //Application.targetFrameRate = 10;
+
 
     }
 
@@ -18,11 +17,11 @@ public class RubyController : MonoBehaviour
         //Movimiento Horizontal
         float horizontal = Input.GetAxis("Horizontal");
         Vector2 position = transform.position;
-        position.x = position.x + 0.1f * horizontal * Time.deltaTime;
+        position.x = position.x + (3.0f * horizontal) * Time.deltaTime;
         
         // movimiento vertical
         float vertical = Input.GetAxis("Vertical");
-        position.y = position.y + 0.1f * vertical * Time.deltaTime;
+        position.y = position.y + (3.0f * vertical) * Time.deltaTime;
 
         transform.position = position;
     }
