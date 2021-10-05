@@ -3436,10 +3436,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4630535876449296154, guid: 8704c9911fc72ad4dbf1fc39d812063d, type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7189585256290104749, guid: 8704c9911fc72ad4dbf1fc39d812063d, type: 3}
       propertyPath: m_Name
       value: ruby
@@ -3447,14 +3443,6 @@ PrefabInstance:
     - target: {fileID: 7189585256290104751, guid: 8704c9911fc72ad4dbf1fc39d812063d, type: 3}
       propertyPath: m_RootOrder
       value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 7189585256290104751, guid: 8704c9911fc72ad4dbf1fc39d812063d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7189585256290104751, guid: 8704c9911fc72ad4dbf1fc39d812063d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7189585256290104751, guid: 8704c9911fc72ad4dbf1fc39d812063d, type: 3}
       propertyPath: m_LocalPosition.x
