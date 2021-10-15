@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3841982576680381907}
   - component: {fileID: 3841982576680381906}
   - component: {fileID: 3379004632779975195}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CogBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,4 +144,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e613b4b21118fc145b070605cf9b32d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 3841982576680381909}
