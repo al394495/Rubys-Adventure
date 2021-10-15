@@ -62,13 +62,12 @@ public class EnemyController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        EnemyController e = other.collider.GetComponent<EnemyController>();
-        if (e != null)
-        {
-            e.Fix();
-        }
+        RubyController player = other.gameObject.GetComponent<RubyController>();
 
-        Destroy(gameObject);
+        if (player != null)
+        {
+            player.ChangeHealth(-1);
+        }
     }
 
     //Public because we want to call it from elsewhere like the projectile script
@@ -76,5 +75,6 @@ public class EnemyController : MonoBehaviour
     {
         broken = false;
         rigidbody2D.simulated = false;
+        animator.SetTrigger("Fixed");
     }
 }
