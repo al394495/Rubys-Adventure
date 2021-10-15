@@ -3784,6 +3784,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7189585256290104720, guid: 8704c9911fc72ad4dbf1fc39d812063d, type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 3841982576680381909, guid: f52e951519436624bb48783d14ff309c, type: 3}
     - target: {fileID: 7189585256290104749, guid: 8704c9911fc72ad4dbf1fc39d812063d, type: 3}
       propertyPath: m_Name
       value: ruby
