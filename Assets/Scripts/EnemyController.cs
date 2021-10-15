@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
     public float speed = 3.0f;
     public bool vertical;
     public float changeTime = 3.0f;
+    bool broken = true;
 
     Rigidbody2D rigidbody2D;
     float timer;
@@ -25,6 +26,11 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!broken)
+        {
+            return;
+        }
+
         timer -= Time.deltaTime;
 
         if (timer < 0)
@@ -56,11 +62,19 @@ public class EnemyController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        RubyController player = other.gameObject.GetComponent<RubyController>();
-
-        if (player != null)
+        EnemyController e = other.collider.GetComponent<EnemyController>();
+        if (e != null)
         {
-            player.ChangeHealth(-1);
+            e.Fix();
         }
+
+        Destroy(gameObject);
+    }
+
+    //Public because we want to call it from elsewhere like the projectile script
+    public void Fix()
+    {
+        broken = false;
+        rigidbody2D.simulated = false;
     }
 }
