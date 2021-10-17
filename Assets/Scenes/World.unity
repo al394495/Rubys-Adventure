@@ -9407,6 +9407,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5543553057802224373, guid: b65c3e28757fd7d448dda27e6ec992f6, type: 3}
+      propertyPath: moveWithTransform
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b65c3e28757fd7d448dda27e6ec992f6, type: 3}
 --- !u!1001 &7189585256121873328
@@ -9416,6 +9420,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7189585256290104720, guid: 8704c9911fc72ad4dbf1fc39d812063d, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ae904c7305df7344d86b2092c0cb3a26, type: 3}
+    - target: {fileID: 7189585256290104720, guid: 8704c9911fc72ad4dbf1fc39d812063d, type: 3}
+      propertyPath: throwSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9b1bb1f450b7d444fa4a8019d13519a7, type: 3}
+    - target: {fileID: 7189585256290104720, guid: 8704c9911fc72ad4dbf1fc39d812063d, type: 3}
+      propertyPath: collectedClip
+      value: 
+      objectReference: {fileID: 8300000, guid: af5f8b64e3f58f24c87ff8f789b04f6c, type: 3}
     - target: {fileID: 7189585256290104720, guid: 8704c9911fc72ad4dbf1fc39d812063d, type: 3}
       propertyPath: projectilePrefab
       value: 
