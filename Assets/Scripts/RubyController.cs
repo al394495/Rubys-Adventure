@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class RubyController : MonoBehaviour
 {
     public float speed = 3.0f;
@@ -20,6 +21,9 @@ public class RubyController : MonoBehaviour
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
 
+    AudioSource audiosource;
+
+
     public GameObject projectilePrefab;
 
     // Start is called before the first frame update
@@ -29,7 +33,10 @@ public class RubyController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
 
         currentHealth = maxHealth;
+        audiosource = GetComponent<AudioSource>();
+
     }
+
 
     // Update is called once per frame
     void Update()
@@ -81,8 +88,10 @@ public class RubyController : MonoBehaviour
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
+
+
+
 
     }
 
@@ -95,4 +104,11 @@ public class RubyController : MonoBehaviour
 
         animator.SetTrigger("Launch");
     }
+    
+    public void PlaySound(AudioClip clip)
+    {
+        audiosource = GetComponent<AudioSource>();
+    }
+
+
 }
