@@ -195,7 +195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 298264122}
   - component: {fileID: 298264121}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: cameraconfiner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -414,7 +414,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.575917, y: -1.9000001, z: -10}
+  m_LocalPosition: {x: 7.339999, y: -1.8999996, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
