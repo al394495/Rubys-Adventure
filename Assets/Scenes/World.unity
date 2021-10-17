@@ -9110,6 +9110,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bot
       objectReference: {fileID: 0}
+    - target: {fileID: 2838650026283345742, guid: bcce1f8be95ddff44a8bc229592b9cf4, type: 3}
+      propertyPath: MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcce1f8be95ddff44a8bc229592b9cf4, type: 3}
 --- !u!1001 &1464667681353450786
